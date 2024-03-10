@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>91 CLUB</title>
+    <!-- Bootstrap CSS -->
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        .btn-primary {
+            width: 100%;
+        }
+
+        #result {
+            text-align: center;
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>91 CLUB</h1>
+        <form>
+            <div class="mb-3">
+                <label for="a" class="form-label">Enter last number :</label>
+                <input type="number" class="form-control" id="a" name="a">
+            </div>
+            <div class="mb-3">
+                <label for="b" class="form-label">Enter last second number:</label>
+                <input type="number" class="form-control" id="b" name="b">
+            </div>
+            <button type="button" class="btn btn-primary" onclick="compare()">RESULT</button>
+        </form>
+        <p id="result"></p>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById("a").addEventListener("keyup", function (event) {
+            if (event.key === "Enter") {
+                event.preventDefault();
+                compare();
+            }
+        });
+
+        document.getElementById("b").addEventListener("keyup", function (event) {
+            if (event.key === "Enter") {
+                event.preventDefault();
+                compare();
+            }
+        });
+
+        function compare() {
+            var a = parseInt(document.getElementById("a").value);
+            var b = parseInt(document.getElementById("b").value);
+            var c = a + b;
+            if (c > 10) {
+                if (c < 15) {
+                    alert("BIG");
+                } else {
+                    alert("SMALL");
+                }
+            } else {
+                if (c < 10) {
+                    if (c < 5) {
+                        alert("BIG");
+                    } else {
+                        alert("SMALL");
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
