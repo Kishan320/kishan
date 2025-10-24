@@ -63,7 +63,7 @@ body {
   direction: ltr;
   overflow-x: hidden;
   height: 100%;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 13px;
   padding: 0;
   margin: 0;
@@ -116,11 +116,11 @@ a:hover, a:focus, a:active {
 }
 
 h1, h2 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 h3, h4, h5 {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
@@ -133,7 +133,7 @@ h1, h2, h3, h4, h5 {
 }
 
 h5.over-title {
-  font-family: "Lato", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
 }
 
@@ -4575,7 +4575,8 @@ fieldset .form-group {
 }
 fieldset legend {
   background: inherit;
-  font-family: "Lato", sans-serif;
+  font-family: "Poppins", sans-serif;
+
   color: #007AFF;
   font-size: 15px;
   left: 10px;
@@ -5248,7 +5249,7 @@ div.cs-skin-slide::before {
 .cs-select [class*=" ti-"] span,
 .cs-select [class^="fa-"] span,
 .cs-select [class*=" fa-"] span {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "Poppins", sans-serif;
   padding-left: 30px !important;
 }
 .cs-select [class^="ti-"]:before,
@@ -8154,7 +8155,7 @@ Social Icons
 .btn-scroll {
   position: relative;
   overflow: hidden;
-  font-family: Helvetica, Arial, sans-serif !important;
+  font-family: "Poppins", sans-serif;
   line-height: inherit !important;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -9447,7 +9448,7 @@ nav.links a {
 
 .lock-screen .user-info h4 {
   color: #666666;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 300;
   margin-top: 0;
 }
@@ -9487,7 +9488,7 @@ nav.links a {
 }
 
 .invoice h4 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 300 !important;
 }
 
@@ -11235,7 +11236,7 @@ td.small-width {
   }
 }
 #page-title .mainDescription {
-  font-family: "Lato", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #777;
   display: block;
   font-size: 18px;
@@ -11257,7 +11258,7 @@ td.small-width {
   right: 30px !important;
   top: 50% !important;
   width: auto !important;
-  font-family: "Lato", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 @media (max-width: 767px) {
   #page-title .breadcrumb {
